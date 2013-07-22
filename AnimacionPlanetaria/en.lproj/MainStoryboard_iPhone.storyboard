@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Estrellas.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="odS-sY-TSm"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vj-CO-Dg5">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="5U3-Sw-BVt"/>
+                                    <constraint firstAttribute="height" constant="44" id="w8F-SF-kiJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Animar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="animar:" destination="2" eventType="touchUpInside" id="Qtq-bf-vbO"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="sol.png" translatesAutoresizingMaskIntoConstraints="NO" id="jE9-6A-9qW">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="lDh-Yu-mS6"/>
+                                    <constraint firstAttribute="width" constant="55" id="ub1-qi-d0A"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117656350135803" green="0.078431375324726105" blue="0.40784317255020142" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="odS-sY-TSm" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="8Dc-yF-KZN"/>
+                            <constraint firstItem="jE9-6A-9qW" firstAttribute="centerX" secondItem="odS-sY-TSm" secondAttribute="centerX" type="default" id="CSg-Se-j0m"/>
+                            <constraint firstItem="odS-sY-TSm" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="Fto-1v-jHt"/>
+                            <constraint firstItem="odS-sY-TSm" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="Hgi-mi-v3d"/>
+                            <constraint firstItem="jE9-6A-9qW" firstAttribute="centerX" secondItem="5Vj-CO-Dg5" secondAttribute="centerX" type="default" id="IbU-Hf-clu"/>
+                            <constraint firstItem="5Vj-CO-Dg5" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="NrM-m2-sos"/>
+                            <constraint firstItem="jE9-6A-9qW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="220" id="UkS-ac-R9j"/>
+                            <constraint firstItem="odS-sY-TSm" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="yGx-4n-JXL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Estrellas.jpg" width="1152" height="864"/>
+        <image name="sol.png" width="213" height="213"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
